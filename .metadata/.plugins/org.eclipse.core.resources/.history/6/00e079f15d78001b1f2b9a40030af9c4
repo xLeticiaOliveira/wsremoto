@@ -1,0 +1,14 @@
+package br.com.eccomerce.principal;
+
+import br.com.ecommerce.modelo.Produto;
+
+public class TesteProduto2 {
+
+	public static void main(String[] args) {
+		Produto p = new Produto();
+		
+		System.out.println(p.getDescricao());
+
+	}
+
+}

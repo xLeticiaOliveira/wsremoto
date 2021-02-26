@@ -1,0 +1,11 @@
+//Aula 2 - 23/02
+package decisao;
+
+public class DecisaoSimples2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

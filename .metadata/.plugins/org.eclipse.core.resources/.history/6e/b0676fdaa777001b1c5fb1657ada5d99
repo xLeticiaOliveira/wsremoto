@@ -1,0 +1,49 @@
+package br.com.ecommerce.modelo;
+
+/*
+ * Design Pattern - Compilado com as melhores práticas para OO
+ * DTO (Data Transfer Object) // Beans // TO
+ * Recomendações:
+ * 1º TODOS os atributos devem ser privados
+ * 2º CADA atributo deve ter um get and set
+ * 3º ???
+ */
+
+
+public class Produto {
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getDescrição() {
+		return descrição;
+	}
+	public void setDescrição(String descrição) {
+		this.descrição = descrição;
+	}
+	public float getValorCompra() {
+		return valorCompra;
+	}
+	public void setValorCompra(float valorCompra) {
+		this.valorCompra = valorCompra;
+	}
+	public float getValorVenda() {
+		return valorVenda;
+	}
+	public void setValorVenda(float valorVenda) {
+		this.valorVenda = valorVenda;
+	}
+	public int getQtde() {
+		return qtde;
+	}
+	public void setQtde(int qtde) {
+		this.qtde = qtde;
+	}
+	private int id;
+	private String descrição;
+	private float valorCompra;
+	private float valorVenda;
+	private int qtde;
+}

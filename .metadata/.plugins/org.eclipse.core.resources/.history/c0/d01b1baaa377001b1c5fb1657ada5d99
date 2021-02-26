@@ -1,0 +1,12 @@
+package ecommerce;
+
+
+
+
+public class Produto {
+	private int id;
+	private String descrição;
+	private float valorCompra;
+	private float valorVenda;
+	private int qtde;
+}

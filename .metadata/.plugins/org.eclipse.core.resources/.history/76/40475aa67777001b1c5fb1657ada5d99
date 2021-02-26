@@ -1,0 +1,47 @@
+package br.com.concessionaria.modelo;
+
+public class Carro {
+	
+	private float valor;
+	private String cor;
+	private boolean status;
+	private short velocidadeAtual;
+	private String modelo;
+	
+	
+	public void preencherCor(String param) {
+		cor = param.toUpperCase();		
+	}
+	
+	public String retornarCor() {
+		return cor;
+	}
+	
+	public void preencherValor(float param) {
+		valor = param;
+	}
+	
+	public float retornarValor() {
+		return valor;
+	}
+	
+	public void ligar() {
+		status = true;
+	}
+	
+	public void desligar() {
+		status = false;
+	}
+	
+	public void acelerar(short velocidade) {
+		velocidadeAtual += velocidade;
+	}
+	
+	public void brecar(short velocidade) {
+		velocidadeAtual -= velocidade;
+	}
+	
+	public String retornarResumo() {
+		return "Modelo: " + modelo + ". Status: " + status + ". Velocidade atual: " + velocidadeAtual;
+	}
+ }

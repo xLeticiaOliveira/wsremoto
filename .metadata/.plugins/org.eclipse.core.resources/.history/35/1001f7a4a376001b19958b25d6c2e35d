@@ -1,0 +1,37 @@
+package exercicios2;
+
+import javax.swing.JOptionPane;
+
+public class Exercicio3 {
+	public static void main(String[] args) {
+		int num1 = Integer.parseInt(JOptionPane.showInputDialog("Digite o primeiro número"));
+		char op = JOptionPane.showInputDialog("Insira a operação (+, -, /, *").charAt(0);
+		int num2 = Integer.parseInt(JOptionPane.showInputDialog("Digite o segundo número"));
+		boolean valido = true;
+		double result = 0;
+		
+		if (op=='+') {
+			result = num1 + num2;
+		}
+		else if(op=='-'){
+			result = num1 - num2;
+		}
+		else if(op=='/') {
+			result = num1 / num2;
+		}
+		else if(op=='*') {
+			result = num1 * num2;
+		}
+		else {
+			valido = false;
+		}
+		
+		if (valido) {
+			JOptionPane.showMessageDialog(null, "Resultado: " + result);
+		}
+		else
+		{
+			JOptionPane.showMessageDialog(null, "Caractere inválido");
+		}
+	}
+}

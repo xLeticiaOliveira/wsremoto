@@ -1,0 +1,10 @@
+package br.com.concessionaria.modelo;
+
+public class Carro {
+	
+	private float valor;
+	private String cor;
+	private boolean status;
+	private int velocidadeAtual;
+	private String modelo;
+}
