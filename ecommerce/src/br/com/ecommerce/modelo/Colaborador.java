@@ -1,22 +1,22 @@
 package br.com.ecommerce.modelo;
 
-public class Cliente {
+public class Colaborador {
 	private int id;
 	private String nome;
-	private String email;
 	private String fone;
+	private Cargo cargo;
 	private Endereco endereco;
 	
-	public Cliente() {
+	public Colaborador() {
 		super();
 	}
 
-	public Cliente(int id, String nome, String email, String fone, Endereco endereco) {
+	public Colaborador(int id, String nome, String fone, Cargo cargo, Endereco endereco) {
 		super();
 		this.id = id;
 		this.nome = nome;
-		this.email = email;
 		this.fone = fone;
+		this.cargo = cargo;
 		this.endereco = endereco;
 	}
 
@@ -36,20 +36,20 @@ public class Cliente {
 		this.nome = nome;
 	}
 
-	public String getEmail() {
-		return email;
-	}
-
-	public void setEmail(String email) {
-		this.email = email;
-	}
-
 	public String getFone() {
 		return fone;
 	}
 
 	public void setFone(String fone) {
 		this.fone = fone;
+	}
+
+	public Cargo getCargo() {
+		return cargo;
+	}
+
+	public void setCargo(Cargo cargo) {
+		this.cargo = cargo;
 	}
 
 	public Endereco getEndereco() {
@@ -59,19 +59,12 @@ public class Cliente {
 	public void setEndereco(Endereco endereco) {
 		this.endereco = endereco;
 	}
-	
+
 	@Override
 	public String toString() {
-		return "Cliente [id=" + id + ", nome=" + nome + ", email=" + email + ", fone=" + fone + ", endereco=" + endereco
-				+ "]";
+		return "Colaborador [id=" + id + ", nome=" + nome + ", fone=" + fone + ", cargo=" + cargo + ", endereco="
+				+ endereco + "]";
 	}
-
-	public String getUsuario() {
-		if (email.contains("@")) {
-			return email.substring(email.indexOf('@'));
-		}
-		else {
-			return email;
-		}
-	}
+	
+	
 }

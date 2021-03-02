@@ -104,4 +104,12 @@ public class Produto {
 		valorCompra *= porcentagem / 100;
 		valorVenda *= porcentagem / 100;
 	}
+
+	@Override
+	public String toString() {
+		return "Produto [id=" + id + ", descricao=" + descricao + ", valorCompra=" + valorCompra + ", valorVenda="
+				+ valorVenda + ", qtde=" + qtde + "]";
+	}
+	
+	
 }
